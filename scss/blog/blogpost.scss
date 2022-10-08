@@ -1,0 +1,85 @@
+.blog-post{
+    width: 100%;
+    padding: 140px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    .blog-hero{
+        width: 80%;
+        height: 465px;
+        margin: 0 auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #fff;
+
+        h1{
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+        h2{
+           font-size: 26px; 
+        }h3{
+            font-size: 16px;
+        }
+    }
+    #feb-fave{
+        background-image: linear-gradient(rgba(88,124,131,0.6), rgba(88,124,131,0.6)), url("../images/february-favorites-hero.jpg");
+    }
+    #bookclubs{
+        background-image: linear-gradient(rgba(88,124,131,0.6), rgba(88,124,131,0.6)), url("../images/book-club-hero.jpg");
+    }
+    #ereading{
+        background-image: linear-gradient(rgba(88,124,131,0.6), rgba(88,124,131,0.6)), url("../images/eread-hero.jpg");
+    }
+
+    .book-feature{
+        width: 85%;
+        padding-top: 140px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .book-image{
+            width: 250px;
+            height: 380px;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .book-text{
+            width: 80%;
+            h1{
+                font-size: 26px;
+            }
+        }
+    }
+
+    .blog-feature{
+        width: 85%;
+        padding-top: 140px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .blog-image{
+            width: 625px;
+            height: 465px;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .blog-text{
+            width: 50%;
+        }
+    }
+}

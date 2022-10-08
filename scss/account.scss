@@ -1,0 +1,78 @@
+.account-wrapper{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    .login{
+
+        h2{
+            font-weight:normal;
+            font-size: 26px;
+        }
+
+       .form{
+        width: 350px;
+        .field{
+            width: 300px;
+            border-bottom: 1px solid #000;
+            margin: 45px 0px;
+
+            input{
+                background: none;
+                border: none;
+                width: 150px;
+                height: 50px;
+            }
+        }
+
+        #submitLogin{
+            margin: 0 auto;
+            width: 170px;
+            height: 45px;
+            border: none;
+            background-color: #587c83;
+            color: #fff;
+        }
+       }
+    }
+
+    .signup{
+        h4{
+            font-weight: normal;
+            font-size: 16px;
+            margin-bottom: 0px;
+        }
+        h2{
+            font-weight:normal;
+            font-size: 26px;
+        }
+
+        .form{
+            width: 350px;
+            .field{
+                width: 300px;
+                border-bottom: 1px solid #000;
+                margin: 45px 0px;
+    
+                input{
+                    background: none;
+                    border: none;
+                    width: 150px;
+                    height: 50px;
+                }
+            }
+    
+            #submitSignup{
+                margin: 0 auto;
+                width: 170px;
+                height: 45px;
+                border: none;
+                background-color: #587c83;
+                color: #fff;
+            }
+           }
+    }
+}
