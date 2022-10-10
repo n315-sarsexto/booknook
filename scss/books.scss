@@ -20,11 +20,9 @@
                 display: flex;
                 width: 500px;
     
-                p{
-                    width: 200px;
-                }
+                
                 .bookImage{
-                    width: 200px;
+                    width: 40%;
                     height: 315px;
                     overflow: hidden;
                     margin-right: 10px;
@@ -34,21 +32,80 @@
                     }
                     
                 }
-    
-                button{
-                    width: 225px;
-                    height: 70px;
-                    text-transform: uppercase;
-                    background-color: #fff;
-                    text-align: center;
-                    
+       
+                .bookInfo{
+                    width: 40%;
+                    button{
+                        width: 90%;
+                        height: 70px;
+                        text-transform: uppercase;
+                        background-color: #fff;
+                        text-align: center;
+                        
+                    }
+                    button:hover{
+                        cursor: pointer;
+                        background-color: rgba(88,124,131,0.6);
+                    }
                 }
-                button:hover{
-                    cursor: pointer;
-                    background-color: rgba(88,124,131,0.6);
-                }
+                
             }
         }
     }
 
+}
+@media screen and (max-width: 768px){
+    .books{
+        width: 95%;
+        .category{
+            margin: 50px 0px;
+            margin-bottom: 25px;
+
+            .sets-row, .history-row, .horror-row, .childrens-row, .other-row{
+                flex-direction: column;
+
+                .book{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .books{
+        width: 95%;
+        .category{
+            margin: 50px 0px;
+
+            .sets-row, .history-row, .horror-row, .childrens-row, .other-row{
+                flex-direction: column;
+
+                .book{
+                    width: 100%;
+                    justify-content: space-around;
+                    .bookImage{
+                        width: 40%;
+                        height: 200px;
+                        overflow: hidden;
+        
+                        img{
+                            width: 100%;
+                        }
+                        
+                    }
+                    .bookInfo{
+                        width: 40%;
+                        p{
+                            width: 100%;
+                        }
+                        button{
+                            width: 100%;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

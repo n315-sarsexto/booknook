@@ -42,3 +42,22 @@
             }
         }
     }
+
+    @media screen and (max-width: 768px){
+        .cart-wrapper{
+
+            .items{
+                .book{
+                    width: 95%;
+                    padding-top: 50px;
+
+                    .bookImage{
+                        width: 30%;
+                    }
+                    .bookInfo{
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }

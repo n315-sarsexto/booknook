@@ -16,7 +16,6 @@ function changeRoute() {
   else{
     MODEL.changePage(pageID);
   }
-  
 
 }
 
@@ -39,6 +38,13 @@ function removeBook(){
     console.log("Deleted " + bookDelID);
 });
   
+}
+
+function mobileNav(){
+  $(".icon").on("click", function(e){
+    console.log("Clicked");
+    $(".mobileNav").toggleClass("visible");
+  })
 }
 
 function initSubmitListener(){
@@ -83,6 +89,7 @@ function initSubmitListener(){
   });
 }
 
+
 // //random little trick of Todd's
 // function trace(fileName, log){
 //     console.log(fileName + ' ' + log);
@@ -91,4 +98,5 @@ function initSubmitListener(){
 
 $(document).ready(function () {
   initURLListener();
+  mobileNav();
 });

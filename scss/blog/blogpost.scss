@@ -83,3 +83,46 @@
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    .blog-post{
+        padding: 20px;
+        .blog-hero{
+            width: 90%;
+        }
+
+        .book-feature{
+            width: 95%;
+            padding-top: 50px;
+    
+            .book-image{
+                width: 25%;
+            }
+            .book-text{
+                width: 70%;
+                h1{
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .blog-feature{
+            width: 95%;
+            padding-top: 50px;
+    
+            .blog-image{
+                width: 40%;
+                height: 465px;
+                overflow: hidden;
+    
+                img{
+                    width: 100%;
+                }
+            }
+    
+            .blog-text{
+                width: 50%;
+            }
+        }
+    }
+}

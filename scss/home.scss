@@ -18,8 +18,8 @@
 
         .hero-text{
             position: absolute;
-            right: 300px;
-            top: 200px;
+            right: 20%;
+            top: 40%;
             color: #fff;
             text-transform: uppercase;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -69,5 +69,20 @@
             }
         }
         
+    }
+}
+
+@media screen and (max-width: 768px){
+    .home-wrapper{
+        .home-hero{
+            width: 100%;
+        }
+        .featured-books{
+            flex-direction: column;
+            .book{
+                margin-bottom: 50px;
+                width: 90%;
+            }
+        }
     }
 }

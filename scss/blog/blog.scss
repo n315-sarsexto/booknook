@@ -21,7 +21,7 @@
             justify-content: space-around;
 
             img{
-                height: 375px;
+                width: 40%;
             }
         }
 
@@ -53,7 +53,7 @@
             button{
                 background-color: #587C83;
                 border: 1px solid #fff;
-                width: 225px;
+                width: 50%;
                 height: 70px;
                 color: #fff;
                 text-transform: uppercase;
@@ -61,6 +61,27 @@
             button:hover{
                 cursor: pointer;
                 background-color: rgba(255,255,255,0.4);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .blog-wrapper{
+
+        .blog-item{
+            width: 95%;
+
+            .blog-text{
+                width: 50%;
+                height: 100%;
+                h1{
+                    font-size: 16px
+                }p{
+                    font-size: 12px;
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
             }
         }
     }

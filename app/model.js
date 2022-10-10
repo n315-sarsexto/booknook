@@ -114,7 +114,7 @@ var bookList = [
         category: "childrens"
     }
 ]
-var isLoggedIn = false;
+var isLoggedIn = true;
 
 export function changePage(pageID, callback){
     if(pageID == ""){
@@ -276,3 +276,4 @@ export function removeFromCart(bookIdx){
     cart.pop(bookIdx);
     $("#cartCount").html(cart.length.toString());
 }
+  

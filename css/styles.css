@@ -37,7 +37,7 @@ nav a {
   color: #000;
 }
 nav .logo {
-  width: 200px;
+  width: 10%;
   display: flex;
   align-items: center;
 }
@@ -49,7 +49,7 @@ nav .logo h3 {
   font-size: 16px;
 }
 nav .search {
-  width: 605px;
+  width: 35%;
   height: 45px;
   display: flex;
   align-items: center;
@@ -58,16 +58,15 @@ nav .search {
 }
 nav .search img {
   width: 25px;
-  height: 25px;
 }
 nav .search input {
   background: none;
   border: none;
   height: 100%;
-  width: 550px;
+  width: 90%;
 }
 nav .links {
-  width: 715px;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,7 +79,83 @@ nav .links #user, nav .links #cart {
   display: flex;
   align-items: center;
 }
+nav .icon {
+  display: none;
+}
 
+.mobileNav {
+  display: none;
+  width: 100%;
+  background-color: rgba(88, 124, 131, 0.8);
+}
+.mobileNav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 2% 10%;
+  text-align: right;
+}
+
+.visible {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100%;
+    min-height: 110px;
+  }
+  nav .links {
+    width: 100%;
+    display: block;
+    display: none;
+  }
+  nav .icon {
+    display: block;
+    width: 10%;
+  }
+  nav .icon i {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 425px) {
+  nav {
+    width: 100%;
+    min-height: 110px;
+    justify-content: space-between;
+  }
+  nav .logo {
+    width: 10%;
+    font-size: 13px;
+  }
+  nav .logo img {
+    height: 30px;
+    margin-left: 2px;
+  }
+  nav .logo h3 {
+    margin-bottom: 0px;
+    font-size: 12px;
+  }
+  nav .search {
+    width: 35%;
+  }
+  nav .search img {
+    width: 16px;
+  }
+  nav .links {
+    width: 100%;
+    display: block;
+    display: none;
+  }
+  nav .icon {
+    display: block;
+    width: 10%;
+  }
+  nav .icon i {
+    font-size: 30px;
+  }
+}
 footer {
   width: 100%;
   height: 92px;
@@ -93,12 +168,15 @@ footer {
   justify-content: space-between;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+footer .copyright {
+  width: 20%;
+}
 footer .copyright p {
   margin: 0px;
   padding: 0px;
 }
 footer .links {
-  width: 200px;
+  width: 40%;
   display: flex;
   justify-content: space-between;
 }
@@ -107,15 +185,35 @@ footer .links a {
   text-decoration: none;
 }
 footer .icons {
-  width: 200px;
+  width: 20%;
   display: flex;
   justify-content: space-between;
 }
 footer .icons img {
   width: 44px;
-  height: 44px;
 }
 
+@media screen and (max-width: 768px) {
+  footer {
+    justify-content: space-around;
+    padding: 0px;
+  }
+  footer .icons {
+    justify-content: space-around;
+  }
+  footer .icons img {
+    width: 22px;
+  }
+}
+@media screen and (max-width: 425px) {
+  footer {
+    justify-content: space-between;
+  }
+  footer .icons {
+    width: 10%;
+    flex-direction: column;
+  }
+}
 .home-wrapper {
   width: 95%;
   margin: 0 auto;
@@ -136,8 +234,8 @@ footer .icons img {
 }
 .home-wrapper .home-hero .hero-text {
   position: absolute;
-  right: 300px;
-  top: 200px;
+  right: 20%;
+  top: 40%;
   color: #fff;
   text-transform: uppercase;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -183,6 +281,18 @@ footer .icons img {
   background-color: rgba(88, 124, 131, 0.6);
 }
 
+@media screen and (max-width: 768px) {
+  .home-wrapper .home-hero {
+    width: 100%;
+  }
+  .home-wrapper .featured-books {
+    flex-direction: column;
+  }
+  .home-wrapper .featured-books .book {
+    margin-bottom: 50px;
+    width: 90%;
+  }
+}
 .about-wrapper {
   width: 100%;
   display: flex;
@@ -222,6 +332,41 @@ footer .icons img {
   margin: 100px 0px;
 }
 
+@media screen and (max-width: 768px) {
+  .about-wrapper .about-section {
+    width: 98%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .about-wrapper .about-section .image {
+    width: 210px;
+    height: 345px;
+  }
+  .about-wrapper .about-section .text h1, .about-wrapper .about-section .text h2 {
+    font-size: 12px;
+  }
+  .about-wrapper .about-section .text p {
+    font-size: 11px;
+    margin: 50px 0px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-wrapper .about-section {
+    width: 98%;
+    margin-top: 0px;
+  }
+  .about-wrapper .about-section .image {
+    width: 100px;
+    height: 150px;
+  }
+  .about-wrapper .about-section .text h1, .about-wrapper .about-section .text h2 {
+    font-size: 12px;
+  }
+  .about-wrapper .about-section .text p {
+    font-size: 11px;
+    margin: 50px 0px;
+  }
+}
 .books {
   margin: 0 auto;
   padding-top: 50px;
@@ -244,11 +389,8 @@ footer .icons img {
   display: flex;
   width: 500px;
 }
-.books .category .sets-row .book p, .books .category .history-row .book p, .books .category .horror-row .book p, .books .category .childrens-row .book p, .books .category .other-row .book p {
-  width: 200px;
-}
 .books .category .sets-row .book .bookImage, .books .category .history-row .book .bookImage, .books .category .horror-row .book .bookImage, .books .category .childrens-row .book .bookImage, .books .category .other-row .book .bookImage {
-  width: 200px;
+  width: 40%;
   height: 315px;
   overflow: hidden;
   margin-right: 10px;
@@ -256,21 +398,71 @@ footer .icons img {
 .books .category .sets-row .book .bookImage img, .books .category .history-row .book .bookImage img, .books .category .horror-row .book .bookImage img, .books .category .childrens-row .book .bookImage img, .books .category .other-row .book .bookImage img {
   width: 100%;
 }
-.books .category .sets-row .book button, .books .category .history-row .book button, .books .category .horror-row .book button, .books .category .childrens-row .book button, .books .category .other-row .book button {
-  width: 225px;
+.books .category .sets-row .book .bookInfo, .books .category .history-row .book .bookInfo, .books .category .horror-row .book .bookInfo, .books .category .childrens-row .book .bookInfo, .books .category .other-row .book .bookInfo {
+  width: 40%;
+}
+.books .category .sets-row .book .bookInfo button, .books .category .history-row .book .bookInfo button, .books .category .horror-row .book .bookInfo button, .books .category .childrens-row .book .bookInfo button, .books .category .other-row .book .bookInfo button {
+  width: 90%;
   height: 70px;
   text-transform: uppercase;
   background-color: #fff;
   text-align: center;
 }
-.books .category .sets-row .book button:hover, .books .category .history-row .book button:hover, .books .category .horror-row .book button:hover, .books .category .childrens-row .book button:hover, .books .category .other-row .book button:hover {
+.books .category .sets-row .book .bookInfo button:hover, .books .category .history-row .book .bookInfo button:hover, .books .category .horror-row .book .bookInfo button:hover, .books .category .childrens-row .book .bookInfo button:hover, .books .category .other-row .book .bookInfo button:hover {
   cursor: pointer;
   background-color: rgba(88, 124, 131, 0.6);
 }
 
+@media screen and (max-width: 768px) {
+  .books {
+    width: 95%;
+  }
+  .books .category {
+    margin: 50px 0px;
+    margin-bottom: 25px;
+  }
+  .books .category .sets-row, .books .category .history-row, .books .category .horror-row, .books .category .childrens-row, .books .category .other-row {
+    flex-direction: column;
+  }
+  .books .category .sets-row .book, .books .category .history-row .book, .books .category .horror-row .book, .books .category .childrens-row .book, .books .category .other-row .book {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .books {
+    width: 95%;
+  }
+  .books .category {
+    margin: 50px 0px;
+  }
+  .books .category .sets-row, .books .category .history-row, .books .category .horror-row, .books .category .childrens-row, .books .category .other-row {
+    flex-direction: column;
+  }
+  .books .category .sets-row .book, .books .category .history-row .book, .books .category .horror-row .book, .books .category .childrens-row .book, .books .category .other-row .book {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .books .category .sets-row .book .bookImage, .books .category .history-row .book .bookImage, .books .category .horror-row .book .bookImage, .books .category .childrens-row .book .bookImage, .books .category .other-row .book .bookImage {
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+  }
+  .books .category .sets-row .book .bookImage img, .books .category .history-row .book .bookImage img, .books .category .horror-row .book .bookImage img, .books .category .childrens-row .book .bookImage img, .books .category .other-row .book .bookImage img {
+    width: 100%;
+  }
+  .books .category .sets-row .book .bookInfo, .books .category .history-row .book .bookInfo, .books .category .horror-row .book .bookInfo, .books .category .childrens-row .book .bookInfo, .books .category .other-row .book .bookInfo {
+    width: 40%;
+  }
+  .books .category .sets-row .book .bookInfo p, .books .category .history-row .book .bookInfo p, .books .category .horror-row .book .bookInfo p, .books .category .childrens-row .book .bookInfo p, .books .category .other-row .book .bookInfo p {
+    width: 100%;
+  }
+  .books .category .sets-row .book .bookInfo button, .books .category .history-row .book .bookInfo button, .books .category .horror-row .book .bookInfo button, .books .category .childrens-row .book .bookInfo button, .books .category .other-row .book .bookInfo button {
+    width: 100%;
+  }
+}
 .account-wrapper {
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -334,6 +526,37 @@ footer .icons img {
   color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .account-wrapper {
+    flex-direction: column;
+  }
+  .account-wrapper .login {
+    margin-top: 50px;
+    width: 90%;
+  }
+  .account-wrapper .login .form {
+    width: 95%;
+  }
+  .account-wrapper .login .form .field {
+    width: 100%;
+  }
+  .account-wrapper .login .form .field input {
+    width: 80%;
+  }
+  .account-wrapper .signup {
+    margin-top: 50px;
+    width: 90%;
+  }
+  .account-wrapper .signup .form {
+    width: 95%;
+  }
+  .account-wrapper .signup .form .field {
+    width: 100%;
+  }
+  .account-wrapper .signup .form .field input {
+    width: 80%;
+  }
+}
 .cart-wrapper {
   width: 100%;
 }
@@ -370,6 +593,18 @@ footer .icons img {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 768px) {
+  .cart-wrapper .items .book {
+    width: 95%;
+    padding-top: 50px;
+  }
+  .cart-wrapper .items .book .bookImage {
+    width: 30%;
+  }
+  .cart-wrapper .items .book .bookInfo {
+    width: 60%;
+  }
+}
 .blog-wrapper {
   width: 100%;
   margin: 0 auto;
@@ -393,7 +628,7 @@ footer .icons img {
   justify-content: space-around;
 }
 .blog-wrapper .blog-item .blog-images img {
-  height: 375px;
+  width: 40%;
 }
 .blog-wrapper .blog-item .blog-image {
   width: 40%;
@@ -422,7 +657,7 @@ footer .icons img {
 .blog-wrapper .blog-item .blog-text button {
   background-color: #587C83;
   border: 1px solid #fff;
-  width: 225px;
+  width: 50%;
   height: 70px;
   color: #fff;
   text-transform: uppercase;
@@ -432,6 +667,23 @@ footer .icons img {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+@media screen and (max-width: 768px) {
+  .blog-wrapper .blog-item {
+    width: 95%;
+  }
+  .blog-wrapper .blog-item .blog-text {
+    width: 50%;
+    height: 100%;
+  }
+  .blog-wrapper .blog-item .blog-text h1 {
+    font-size: 16px;
+  }
+  .blog-wrapper .blog-item .blog-text p {
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 .blog-post {
   width: 100%;
   padding: 140px;
@@ -507,6 +759,43 @@ footer .icons img {
 }
 .blog-post .blog-feature .blog-text {
   width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-post {
+    padding: 20px;
+  }
+  .blog-post .blog-hero {
+    width: 90%;
+  }
+  .blog-post .book-feature {
+    width: 95%;
+    padding-top: 50px;
+  }
+  .blog-post .book-feature .book-image {
+    width: 25%;
+  }
+  .blog-post .book-feature .book-text {
+    width: 70%;
+  }
+  .blog-post .book-feature .book-text h1 {
+    font-size: 16px;
+  }
+  .blog-post .blog-feature {
+    width: 95%;
+    padding-top: 50px;
+  }
+  .blog-post .blog-feature .blog-image {
+    width: 40%;
+    height: 465px;
+    overflow: hidden;
+  }
+  .blog-post .blog-feature .blog-image img {
+    width: 100%;
+  }
+  .blog-post .blog-feature .blog-text {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
