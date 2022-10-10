@@ -21,6 +21,18 @@ h1, h2, h3, h4, h5, h6, p {
   margin-top: 200px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+#app .prompt button {
+  width: 200px;
+  height: 70px;
+  font-size: 1.5em;
+  border: none;
+  background-color: #587C83;
+  color: #fff;
+}
+#app .prompt button:hover {
+  cursor: pointer;
+  background-color: rgba(88, 124, 131, 0.6);
+}
 
 nav {
   width: 100%;

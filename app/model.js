@@ -114,7 +114,7 @@ var bookList = [
         category: "childrens"
     }
 ]
-var isLoggedIn = true;
+var isLoggedIn = false;
 
 export function changePage(pageID, callback){
     if(pageID == ""){
@@ -227,11 +227,13 @@ export function changePage(pageID, callback){
               });
           }else{
             $("#app").html(`
-            <div class="prompt"><h1>Go add some stuff to your cart!</h1></div>`)
+            <div class="prompt"><h1>Go add some stuff to your cart!</h1>
+            <a href="#books"><button>Go to Books</button></a></div>`)
           }
           }else{
             $("#app").html(`
-            <div class="prompt"><h1>Please sign in before continuing.</h1></div>`)
+            <div class="prompt"><h1>Please sign in before continuing.</h1>
+            <a href="#account"><button>Sign In</button></a></div>`)
           }
           
 
@@ -244,7 +246,8 @@ export function changePage(pageID, callback){
                 $("#app").html(data);
             }else{
                 $("#app").html(`
-                <div class="prompt"><h1>Please sign in to read this blog post.</h1></div>`)
+                <div class="prompt"><h1>Please sign in to read this blog post.</h1>
+                <a href="#account"><button>Sign In</button></a></div></div>`)
             }
       });
       }
